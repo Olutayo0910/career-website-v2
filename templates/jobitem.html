@@ -1,0 +1,24 @@
+
+  <div class="row border-bottom" style="align-items: center;">
+    <div class="col-10">
+    <div>
+      <h2>{{job['title']}}</h2>
+    </div>
+    <div>
+      <b>Location:</b> {{job['location']}}
+      </div>
+    {% if 'salary' in job %}
+    <div>
+      <b>Salary:</b> {{job['salary']}}
+    </div>
+    {% endif %}
+  </div>
+  
+  <div class="col-2">
+      <button class="btn btn-primary d-grid gap-2 d-md-flex justify-content-md-end" type="button">Apply</button>
+  </div>
+    </div>
+
+  
+
+
