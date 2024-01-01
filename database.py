@@ -2,10 +2,7 @@ from sqlalchemy import create_engine, text
 import os
 
 # Use environment variables for sensitive information
-db_host = os.getenv("DB_HOST", "aws.connect.psdb.cloud")
-db_user = os.getenv("DB_USER", "ktrqr85lizafwfnxgkhc")
-db_password = os.getenv("DB_PASSWORD", "pscale_pw_i5alAT9mpYqizYmEiHLK48kke5F22ilAsPoZfKnYXHK")
-db_name = os.getenv("DB_NAME", "careerwebsite")
+
 
 # Construct the database URL
 db_connector = f"mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}?charset=utf8mb4"
